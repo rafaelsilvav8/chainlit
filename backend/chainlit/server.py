@@ -341,7 +341,6 @@ def get_user_facing_url(url: URL):
     """
     chainlit_url = os.environ.get("CHAINLIT_URL")
     
-    chainlit_url = os.environ.get("CHAINLIT_URL")
     chainlit_url = chainlit_url.replace("/auth/oauth/github/callback","")
     chainlit_url = chainlit_url.replace("/auth/oauth/gitlab/callback","")
     chainlit_url = chainlit_url.replace("/auth/oauth/azure-ad/callback","")
